@@ -16,6 +16,7 @@ public class Config {
 
     public static class Roupa {
         public String nome;                      // nome mostrado na tela
+        public String categoria;                 // ex: "Super-herois", "Viloes", "Animes" (vazio = "Geral")
         public String item;                      // item entregue (o que o pack de roupas usa), ex: "minecraft:red_wool"
         public List<Custo> custo = new ArrayList<>();
     }
@@ -37,6 +38,7 @@ public class Config {
                 Config padrao = new Config();
                 Roupa exemplo = new Roupa();
                 exemplo.nome = "Roupa de exemplo";
+                exemplo.categoria = "Geral";
                 exemplo.item = "minecraft:red_wool";
                 Custo c1 = new Custo();
                 c1.item = "minecraft:white_wool";
